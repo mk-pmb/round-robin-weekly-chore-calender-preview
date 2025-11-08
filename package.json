@@ -1,0 +1,32 @@
+{ "name": "round-robin-weekly-chore-calender-preview",
+  "version": "0.0.0",
+  "description": "Quickly see the next few dates for weekly events with rotating assignment (Kehrwoche calender).",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/round-robin-weekly-chore-calender-preview/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/round-robin-weekly-chore-calender-preview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/round-robin-weekly-chore-calender-preview/issues"
+  },
+  "contributors": [],
+
+  "private": true, "license": "ISC",
+  "scripts": { "test": "elp && nodemjs test/all.mjs" },
+  "directories": { "test": "test" },
+  "eslintConfig": { "extends": "nodejs-pmb",
+    "env": { "browser": true }
+  },
+
+  "dependencies": {},
+  "devDependencies": {
+    "equal-pmb": "^0.1.6",
+    "lib-demo-util-160404": "^0.1.13"
+  },
+
+
+  "engines": { "npm": ">=7.0.0", "node": ">=16.0.0" }
+}
