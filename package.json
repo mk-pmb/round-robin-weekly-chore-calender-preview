@@ -1,5 +1,5 @@
 { "name": "round-robin-weekly-chore-calender-preview",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Quickly see the next few dates for weekly events with rotating assignment (Kehrwoche calender).",
   "keywords": [],
 
@@ -15,16 +15,26 @@
   "contributors": [],
 
   "private": true, "license": "ISC",
+  "main": "src/app.mjs",
   "scripts": { "test": "elp && nodemjs test/all.mjs" },
   "directories": { "test": "test" },
   "eslintConfig": { "extends": "nodejs-pmb",
     "env": { "browser": true }
   },
 
-  "dependencies": {},
+  "dependencies": {
+    "qrystr": "^0.1.5"
+  },
   "devDependencies": {
-    "equal-pmb": "^0.1.6",
-    "lib-demo-util-160404": "^0.1.13"
+    "esbrowserify-pmb": "^0.2.1",
+    "eslint-config-nodejs-pmb": "^0.3.13",
+    "eslint-plugin-json-light-pmb": "^1.0.7",
+    "eslint-plugin-n": "^17.16.2",
+    "eslint-pretty-pmb": "^1.0.7",
+    "jsdom": "^22.1.0",
+    "nodemjs": "^0.1.16",
+    "p-fatal": "^0.1.5",
+    "usnam-pmb": "^0.2.5"
   },
 
 

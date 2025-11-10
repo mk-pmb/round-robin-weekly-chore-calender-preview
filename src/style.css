@@ -1,0 +1,51 @@
+﻿@charset "UTF-8";
+/* -*- coding: UTF-8, tab-width: 2 -*- */
+
+html, body, .fill {
+  display: block; margin: 0;
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.widget-wrap { margin: 2em; }
+p { margin: 0; padding: 0; }
+
+table { border-collapse: separate; border-spacing: 0; white-space: nowrap; }
+th, td { text-align: left; vertical-align: top; padding: 0; }
+
+
+body {
+  background: dimgrey;
+  --rbbg-opct: 25%; /* Rainbow background opacity */
+}
+
+
+table.config { width: 100%; }
+table.config td:first-child { width: 1em; }
+table.config td > p:only-child > input:only-child[type="text"] {
+  border-width: 0; padding: 2px; margin: -2px; width: 100%;
+}
+
+/* All our table borders are on the <p>s inside cells,
+  for easier background-color transparency mixing. */
+table, th, td { border-width: 0; }
+table p { padding: 0.2em 0.5em; border: 1px solid black; color: black; }
+
+td { background-color: white; }
+.cal-table td { width: 4ex; }
+.cal-table td[colspan] { width: unset; }
+td.odd-month p { background-color: color-mix(in srgb, silver 30%, transparent); }
+td.invisi { background-color: transparent; }
+td.invisi p { display: none; }
+td.col-head { font-weight: bold; }
+td.day.today p { color: firebrick; }
+td.day.void p,
+td.day.past p { color: darkgrey; }
+
+
+
+tr > td:not(:last-child) p { border-right-width: 0; }
+tr:not(:last-child) > td p { border-bottom-width: 0; }
+
+
+td.day { text-align: right; }
+
